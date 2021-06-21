@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "86a0071b-0968-4570-b989-51a8e956a516",
+		"name": "tcs-test-doc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Obtener planeta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://xf5td2fkg0.execute-api.us-east-2.amazonaws.com/dev/planeta/4",
+					"protocol": "https",
+					"host": [
+						"xf5td2fkg0",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"planeta",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar película",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"The Phantom Menace\",\n    \"episode_id\": 1,\n    \"opening_crawl\": \"Turmoil has engulfed the\\r\\nGalactic Republic. The taxation\\r\\nof trade routes to outlying star\\r\\nsystems is in dispute.\\r\\n\\r\\nHoping to resolve the matter\\r\\nwith a blockade of deadly\\r\\nbattleships, the greedy Trade\\r\\nFederation has stopped all\\r\\nshipping to the small planet\\r\\nof Naboo.\\r\\n\\r\\nWhile the Congress of the\\r\\nRepublic endlessly debates\\r\\nthis alarming chain of events,\\r\\nthe Supreme Chancellor has\\r\\nsecretly dispatched two Jedi\\r\\nKnights, the guardians of\\r\\npeace and justice in the\\r\\ngalaxy, to settle the conflict....\",\n    \"director\": \"George Lucas\",\n    \"producer\": \"Rick McCallum\",\n    \"release_date\": \"1999-05-19\",\n    \"characters\": [\n        \"https://swapi.py4e.com/api/people/2/\",\n        \"https://swapi.py4e.com/api/people/3/\",\n        \"https://swapi.py4e.com/api/people/10/\",\n        \"https://swapi.py4e.com/api/people/11/\",\n        \"https://swapi.py4e.com/api/people/16/\",\n        \"https://swapi.py4e.com/api/people/20/\",\n        \"https://swapi.py4e.com/api/people/21/\",\n        \"https://swapi.py4e.com/api/people/32/\",\n        \"https://swapi.py4e.com/api/people/33/\",\n        \"https://swapi.py4e.com/api/people/34/\",\n        \"https://swapi.py4e.com/api/people/35/\",\n        \"https://swapi.py4e.com/api/people/36/\",\n        \"https://swapi.py4e.com/api/people/37/\",\n        \"https://swapi.py4e.com/api/people/38/\",\n        \"https://swapi.py4e.com/api/people/39/\",\n        \"https://swapi.py4e.com/api/people/40/\",\n        \"https://swapi.py4e.com/api/people/41/\",\n        \"https://swapi.py4e.com/api/people/42/\",\n        \"https://swapi.py4e.com/api/people/43/\",\n        \"https://swapi.py4e.com/api/people/44/\",\n        \"https://swapi.py4e.com/api/people/46/\",\n        \"https://swapi.py4e.com/api/people/47/\",\n        \"https://swapi.py4e.com/api/people/48/\",\n        \"https://swapi.py4e.com/api/people/49/\",\n        \"https://swapi.py4e.com/api/people/50/\",\n        \"https://swapi.py4e.com/api/people/51/\",\n        \"https://swapi.py4e.com/api/people/52/\",\n        \"https://swapi.py4e.com/api/people/53/\",\n        \"https://swapi.py4e.com/api/people/54/\",\n        \"https://swapi.py4e.com/api/people/55/\",\n        \"https://swapi.py4e.com/api/people/56/\",\n        \"https://swapi.py4e.com/api/people/57/\",\n        \"https://swapi.py4e.com/api/people/58/\",\n        \"https://swapi.py4e.com/api/people/59/\"\n    ],\n    \"planets\": [\n        \"https://swapi.py4e.com/api/planets/1/\",\n        \"https://swapi.py4e.com/api/planets/8/\",\n        \"https://swapi.py4e.com/api/planets/9/\"\n    ],\n    \"starships\": [\n        \"https://swapi.py4e.com/api/starships/31/\",\n        \"https://swapi.py4e.com/api/starships/32/\",\n        \"https://swapi.py4e.com/api/starships/39/\",\n        \"https://swapi.py4e.com/api/starships/40/\",\n        \"https://swapi.py4e.com/api/starships/41/\"\n    ],\n    \"vehicles\": [\n        \"https://swapi.py4e.com/api/vehicles/33/\",\n        \"https://swapi.py4e.com/api/vehicles/34/\",\n        \"https://swapi.py4e.com/api/vehicles/35/\",\n        \"https://swapi.py4e.com/api/vehicles/36/\",\n        \"https://swapi.py4e.com/api/vehicles/37/\",\n        \"https://swapi.py4e.com/api/vehicles/38/\",\n        \"https://swapi.py4e.com/api/vehicles/42/\"\n    ],\n    \"species\": [\n        \"https://swapi.py4e.com/api/species/1/\",\n        \"https://swapi.py4e.com/api/species/2/\",\n        \"https://swapi.py4e.com/api/species/6/\",\n        \"https://swapi.py4e.com/api/species/11/\",\n        \"https://swapi.py4e.com/api/species/12/\",\n        \"https://swapi.py4e.com/api/species/13/\",\n        \"https://swapi.py4e.com/api/species/14/\",\n        \"https://swapi.py4e.com/api/species/15/\",\n        \"https://swapi.py4e.com/api/species/16/\",\n        \"https://swapi.py4e.com/api/species/17/\",\n        \"https://swapi.py4e.com/api/species/18/\",\n        \"https://swapi.py4e.com/api/species/19/\",\n        \"https://swapi.py4e.com/api/species/20/\",\n        \"https://swapi.py4e.com/api/species/21/\",\n        \"https://swapi.py4e.com/api/species/22/\",\n        \"https://swapi.py4e.com/api/species/23/\",\n        \"https://swapi.py4e.com/api/species/24/\",\n        \"https://swapi.py4e.com/api/species/25/\",\n        \"https://swapi.py4e.com/api/species/26/\",\n        \"https://swapi.py4e.com/api/species/27/\"\n    ],\n    \"created\": \"2014-12-19T16:52:55.740000Z\",\n    \"edited\": \"2014-12-20T10:54:07.216000Z\",\n    \"url\": \"https://swapi.py4e.com/api/films/4/\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://xf5td2fkg0.execute-api.us-east-2.amazonaws.com/dev/pelicula",
+					"protocol": "https",
+					"host": [
+						"xf5td2fkg0",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"pelicula"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener película",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://xf5td2fkg0.execute-api.us-east-2.amazonaws.com/dev/pelicula/85030150-d252-11eb-b85f-437c37c12ed7",
+					"protocol": "https",
+					"host": [
+						"xf5td2fkg0",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"pelicula",
+						"85030150-d252-11eb-b85f-437c37c12ed7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
