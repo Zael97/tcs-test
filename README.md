@@ -3,7 +3,7 @@
 Serverless application
 
 ## Installation
-Use the packge manager npm to install some libraries.
+Use the packge manager [npm](https://www.npmjs.com) to install some libraries.
 
 ```bash
 npm install
