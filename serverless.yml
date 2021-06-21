@@ -1,0 +1,50 @@
+service: tcs-test
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  lambdaHashingVersion: 20201221
+  region: us-east-2
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "dynamodb:Query"
+        - "dynamodb:Scan"
+        - "dynamodb:GetItem"
+        - "dynamodb:PutItem"
+      Resource: "*"
+functions:
+  createFilm:
+    handler: handler.createFilm
+    events:
+      - http:
+          method: post
+          path: /pelicula
+  getFilm:
+    handler: handler.getFilm
+    events:
+      - http:
+          method: get
+          path: /pelicula/{id}
+  getPlanet:
+    handler: handler.getPlanet
+    events:
+      - http:
+          method: get
+          path: /planeta/{id}
+plugins:
+  - serverless-offline
+resources:
+  Resources:
+    serviceTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: tcs-films
+        AttributeDefinitions:
+          - AttributeName: "id"
+            AttributeType: "S"
+        KeySchema:
+          - AttributeName: "id"
+            KeyType: "HASH"
+        BillingMode: PAY_PER_REQUEST

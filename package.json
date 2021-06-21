@@ -1,0 +1,21 @@
+{
+  "name": "tcs-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-offline": "^7.0.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.931.0",
+    "axios": "^0.21.1",
+    "querystring": "^0.2.1",
+    "uuid": "^8.3.2"
+  }
+}
